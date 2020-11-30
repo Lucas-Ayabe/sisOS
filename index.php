@@ -17,14 +17,14 @@
         <div class="control-group">
             <div class="controls">
                 <div class="main_input_box">
-                    <span class="add-on bg_lg"><i class="fas fa-user"></i></span><input id="email" name="email" type="text" placeholder="Email" />
+                    <span class="add-on bg_lg "><i class="fas fa-user"></i></span><input id="email" name="email" type="text" class="form-control" placeholder="Email" />
                 </div>
             </div>
         </div>
         <div class="control-group">
             <div class="controls">
                 <div class="main_input_box">
-                    <span class="add-on bg_lb"><i class="fas fa-lock"></i></span><input name="senha" type="password" placeholder="Senha" />
+                    <span class="add-on bg_lb"><i class="fas fa-lock"></i></span><input name="senha" type="password" class="form-control" placeholder="Senha" />
                 </div>
             </div>
         </div>
@@ -33,20 +33,6 @@
         </div>
     </form>
 
-</div>
-
-<a href="#notification" id="call-modal" role="button" class="btn" data-toggle="modal" style="display: none ">notification</a>
-<div id="notification" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h4 id="myModalLabel">MapOS</h4>
-    </div>
-    <div class="modal-body">
-        <h5 style="text-align: center" id="message">Os dados de acesso estão incorretos, por favor tente novamente!</h5>
-    </div>
-    <div class="modal-footer">
-        <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Fechar</button>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
