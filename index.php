@@ -1,3 +1,8 @@
+<?php
+    require_once 'vendor/autoload.php';
+    use App\Controller\Login;
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -17,7 +22,7 @@
         <div class="control-group">
             <div class="controls">
                 <div class="main_input_box">
-                    <span class="add-on bg_lg "><i class="fas fa-user"></i></span><input id="email" name="email" type="text" class="form-control" placeholder="Email" />
+                    <span class="add-on bg_lg "><i class="fas fa-user"></i></span><input name="usuario" type="text" class="form-control" placeholder="Usuário" />
                 </div>
             </div>
         </div>
@@ -29,7 +34,7 @@
             </div>
         </div>
         <div class="form-actions" style="text-align: center">
-            <button id="btn-acessar" class="btn btn-success btn-large" /> Acessar</button>
+            <button type="submit" name="login" class="btn btn-success btn-large" /> Acessar</button>
         </div>
     </form>
 
@@ -42,3 +47,14 @@
 </body>
 
 </html>
+
+<?php
+    if(isset($_POST['login'])) {
+        $usuario = $_POST['usuario'];
+        $senha = $_POST['senha'];
+        $logar = new Login();
+        $logar->setUsuario($usuario);
+        $logar->setSenha($senha);
+        $logar->Logar();
+    }
+?>
